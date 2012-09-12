@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf8" />
+<title>困惑</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="/static/media/css/default.css" rel="stylesheet" type="text/css" />
+{% block medialink %}
+{% endblock %}
+</head>
+
+
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="/">困惑</a></h1>
+		<p>&nbsp;&nbsp;by&nbsp; 困惑</p>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="/">home</a></li>
+			<li><a href="/blog">blog</a></li>
+			<li><a href="#">about</a></li>
+			<li><a href="#">links</a></li>
+			<li><a href="#">contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end header -->
+<div id="headerbg"><p class="text1">&#8220;In posuere eleifend odio quisque <br />
+	semper augue mattis&#8221;</p>
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+		<!-- start latest-post -->
+		<div id="latest-post" class="post">
+		
+			{%block content%}  
+			{%endblock%}
+	
+		</div>
+		<!-- end latest-post -->
+		<!-- start recent-posts -->
+		<div id="recent-posts">
+			<!-- begin search -->
+			<div class="templatemo_section">
+                
+                <form method="get" action="/blog/search/">
+                	<label>Search</label> <input name="search" type="text" id="keyword" /> <br />
+                    <input type="submit" value="search" class="button" /> 
+              	</form>
+			</div>
+			
+			<!-- end search -->
+			<!--begin label -->
+			<div class="post">
+            	<h2>Categories</h2>
+					<ul>
+					{% block label%}
+					{% endblock %}
+                	</ul>
+				<div class="entry">
+				</div>
+			</div>
+			<!-- end label-->
+			<div class="post">
+	
+			</div>
+		</div>
+		<!-- end recent-posts -->
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+<div id="footer">
+	<p id="legal">&copy;2012-mysite-<a href="/">slblog</a>. All Rights Reserved. </p>
+</div>
+</body>
+</html>

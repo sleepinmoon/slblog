@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block label%}	{% for labelpost in labelList %}		<li><a href="/blog/label/{{labelpost.lname}}/">{{labelpost.lname}}</a></li>	{% endfor %}{% endblock %}
